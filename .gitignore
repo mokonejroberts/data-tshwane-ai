@@ -1,0 +1,11 @@
+# Ignore notes and SQL files
+php-notes.md
+database.sql
+*.sql
+*.md
+
+# Ignore logs
+logs/
+
+# Ignore .vscode settings
+.vscode/

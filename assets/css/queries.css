@@ -1,0 +1,406 @@
+/* No universal standard ranges. Use ranges of common devices.
+
+Selecting breakpoints:
+Large screens (2XL): >1536px
+Large laptops (XL): 1280px - 1536px
+Small laptops (LG): 1024px - 1280px
+Tablets (MD): 768px - 1024px
+Phone landscape (SM): 576px - 768px
+Phone portrait (XS): <576px */
+
+/* LG - SMALL LAPTOPS: 1024px - 1280px */
+
+@media (max-width: 72rem) {
+    /* 1150px / 16px = 71.875 = 72rem */
+    /* 72rem x 16px = 1152px */
+
+    html {
+        font-size: 56.25%;
+        /* 9px / 16px = 56.25% */
+    }
+
+    .logo-md {
+        width: 190px;
+    }
+
+    /* .nav-link {
+        font-size: var(--text-paragraph); */
+        /* slightly smaller
+    } */
+
+    .features-grid-container {
+        column-gap: 2rem;
+    }
+
+    .cta-section {
+        margin-bottom: 20rem;
+    }
+
+    /* .first-about-highlight { */
+    /* padding: 0.25rem 0.5rem; */
+    /* balanced padding */
+    /* margin-bottom: 0.6rem; */
+    /* keep spacing consistent */
+    /* } */
+
+}
+
+/* MD - TABLETS: 768 - 1024px */
+
+@media (max-width: 51rem) {
+    /* 815px / 16px = 50.9375 = 51rem */
+    /* 51rem x 16px = 816px */
+
+    html {
+        font-size: 50%;
+        /* 8px / 16px = 50% */
+    }
+
+    .logo-md {
+        width: 170px;
+    }
+
+    .subnav .container {
+        width: 97%;
+        gap: 2rem;
+    }
+
+    .nav-link {
+        /* font-size: var(--text-base); */
+        /* compact for tablets */
+    }
+
+    .services-section {
+        /* padding: 4rem 2rem; */
+        margin-bottom: 15rem;
+    }
+
+    .cta-section {
+        margin-bottom: 15rem;
+    }
+
+    .nav-spacer {
+        height: calc(var(--nav-height) -80px);
+    }
+
+    .hero-section {
+        /* height: auto; */
+        /* min-height: auto; */
+        margin-bottom: 10rem;
+    }
+
+    .first-about-container {
+        margin-bottom: 15rem;
+        row-gap: 10rem;
+    }
+
+    .features-section {
+        margin-bottom: 15rem;
+    }
+}
+
+/* SM - PHONE LANDSCAPES: 576 - 768px */
+
+@media (max-width: 43rem) {
+    /* 680px / 16px = 42.5rem = 43rem */
+    /* 43rem x 16px = 688px */
+
+    html {
+        font-size: 43.75%;
+        /* 7px / 16px = 43.75% */
+    }
+
+    .logo-md {
+        width: 160px;
+    }
+
+    .subnav .container {
+        width: 95%;
+        gap: 1.8rem;
+    }
+
+    .nav-link {
+        /* font-size: var(--text-h4); */
+        letter-spacing: 0;
+        /* reduce width impact */
+    }
+
+    .nav-middle {
+        margin: 0.5rem 0;
+        /* breathing space when stacked */
+    }
+
+    .nav-wrapper {
+        margin-bottom: 30rem;
+    }
+
+    .hero-section {
+        height: calc(80vh - var(--nav-height));
+        min-height: auto;
+        margin-bottom: 10rem;
+        
+    }
+
+    .cta-card {
+        padding: 8rem 16rem;
+    }
+
+    .features-section {
+        margin-bottom: 10rem;
+    }
+
+    .features-grid-container {
+        row-gap: 5rem;
+        column-gap: 0.5rem;
+    }
+
+      .cta-section {
+        margin-bottom: 10rem;
+    }
+
+    .services-section {
+        padding: 2rem 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .guidelines-section {
+        padding: 2rem 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .contact {
+        padding: 2rem 1rem;
+        margin-bottom: 10rem;
+    }
+
+    .case-studies {
+        padding: 2rem 1rem;
+        margin-bottom: 10rem;
+    }
+}
+
+/* XS - PHONE PORTRAIT: <576px */
+
+@media (max-width: 34rem) {
+    /* 530 / 16 = 33.125 = 34rem */
+    /* 34rem x 16 = 544 */
+
+    html {
+        font-size: 37.5%;
+        /* 6px / 16px = 37.5 */
+    }
+
+    .hero-heading-break {
+        display: none;
+    }
+
+    
+    .logo-md {
+        width: 120px;
+        margin-right: 1rem;
+    }
+
+    .nav-link {
+        /* font-size: var(--text-base); */
+        /* keep readable but minimal */
+        letter-spacing: 0;
+        /* reduce width impact */
+        line-height: tight;
+    }
+
+    .nav-main {
+        height: auto;
+
+    }
+
+    .nav-middle {
+        margin: 0.75rem 0;
+    }
+
+    .nav-btn-container {
+        gap: 0.5rem;
+    }
+   
+    .subnav .container {
+        width: 90%;
+        gap: 1.5rem;
+
+    }
+
+    .hero-section {
+        height: calc(60vh - var(--nav-height));
+        min-height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .features-grid-container {
+        grid-template-columns: 1fr;
+        /* Explicit stacking order for XS layout */
+        grid-template-areas:
+            "text1"
+            "img1"
+            "text2"
+            "img2"
+            "text3"
+            "img3"
+            "text4"
+            "img4";
+        row-gap: 8rem;
+    }
+
+    /* Assign each element to a named grid area */
+    .features-grid-container>div:nth-of-type(1) {
+        grid-area: text1;
+    }
+
+    .features-grid-container>img:nth-of-type(1) {
+        grid-area: img1;
+    }
+
+    .features-grid-container>div:nth-of-type(2) {
+        grid-area: text2;
+    }
+
+    .features-grid-container>img:nth-of-type(2) {
+        grid-area: img2;
+    }
+
+    .features-grid-container>div:nth-of-type(3) {
+        grid-area: text3;
+    }
+
+    .features-grid-container>img:nth-of-type(3) {
+        grid-area: img3;
+    }
+
+    .features-grid-container>div:nth-of-type(4) {
+        grid-area: text4;
+    }
+
+    .features-grid-container>img:nth-of-type(4) {
+        grid-area: img4;
+    }
+
+    /* Reset swapped image positions for mobile */
+    .feature-img-swop-order-2,
+    .feature-img-swop-order-4 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .feature-img-swop-order {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+    .feature-img {
+        margin-bottom: 1rem;
+    }
+
+    .features-section {
+        margin-bottom: 5rem;
+    }   
+
+    .cta-card {
+        padding: 8rem 6rem;
+    }
+
+    .first-about-section {
+        /* padding: 2rem 1rem; */
+        margin-bottom: 5rem;
+    }
+
+    .first-about-highlight {
+        padding: 0.15rem 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .first-about-grid-container {
+        grid-template-columns: 1fr;
+        /* collapse to one column */
+        gap: 2rem;
+    }
+
+    .first-about-text-1,
+    .first-about-text-2,
+    .first-about-text-3,
+    .first-about-text-4,
+    .first-about-text-5 {
+        margin-bottom: 1.5rem;    
+    }
+
+    .first-about-img {
+        margin-bottom: 2.0rem;
+    }
+
+    /* Force consistent text → image order */
+    #about-origin {
+        order: 1;
+    }
+
+    .first-about-img-1 {
+        order: 2;
+    }
+
+    #about-founder {
+        order: 3;
+        /* text first */
+    }
+
+    .first-about-img-2 {
+        order: 4;
+        /* image second */
+    }
+
+    #about-evolution {
+        order: 5;
+    }
+
+    .first-about-img-3 {
+        order: 6;
+    }
+
+    #about-mission {
+        order: 7;
+    }
+
+    .first-about-img-4 {
+        order: 8;
+    }
+
+    /* Card 5: values & principles */
+    #about-values-principles {
+        order: 9;
+        /* text first */
+    }
+
+    .about-values-img-5 {
+        order: 10;
+        /* image second */
+    }
+
+    .cta-section {
+        margin-bottom: 5rem;
+    }
+
+    .contact {
+        padding: 1rem 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .services-section {
+        /* padding: 4rem 2rem; */
+        margin-bottom: 5rem;
+    }
+
+    .guidelines-section {
+        padding: 1rem 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .case-studies-section {
+        padding: 2rem 1rem;
+        margin-bottom: 5rem;
+    }
+       
+}

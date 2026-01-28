@@ -1,0 +1,341 @@
+/* ---------------------------------------------------------
+   0. DASHBOARD TOKEN EXTENSIONS (built on your root system)
+--------------------------------------------------------- */
+
+:root {
+  /* Dashboard-specific spacing scale */
+  --space-xs: 0.8rem;
+  --space-sm: 1.2rem;
+  --space-md: 2rem;
+  --space-lg: 3.2rem;
+
+  --nav-height: 100px;
+
+  html {
+    font-size: 62.5%;
+    /* 10 / 16 = 62.5% on html root*/
+    scroll-padding-top: calc(var(--nav-height) + 20px);
+  }
+
+  body {
+    font-family: var(--font-family-throughout);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    color: var(--color-neutral-base);
+  }
+
+  /* Dashboard-specific radii */
+  --radius-card: 10px;
+  --radius-button: 6px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+  /* Transition */
+  --transition-base: 200ms ease;
+}
+
+/* Layout Foundation */
+
+#dashboard {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  background: var(--color-neutral-tint);
+  color: var(--color-neutral-shade);
+}
+
+/* Reusable Card Component */
+
+.dashboard-card {
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.dashboard-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+/* Constrain navbar content like .container */
+.navbar {
+  max-width: 1200px;
+  /* same as .container */
+  width: 90%;
+  margin: 0 auto;
+  /* center horizontally */
+  display: flex;
+  flex-direction: column;
+  /* stack address + main row */
+  background-color: var(--color-primary-tint);
+  /* Primary Base */
+
+}
+
+.nav-address-bar {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-white);
+  padding: 0.25rem 0;
+  background: var(--color-primary-shade);
+  /* optional */
+  border-bottom: 1px
+    /* optional */
+}
+
+.nav-main {
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* ------- NAV-MIDDLE ------- */
+
+.nav-middle {
+  flex: 1;
+  /* occupy available space */
+  text-align: center;
+  /* center heading between logo and buttons */
+}
+
+.nav-link {
+  font-size: var(--text-h5);
+  /* heading baseline */
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  font-family: var(--font-family-throughout);
+  text-decoration: none;
+  color: var(--color-neutral-shade);
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.nav-link:hover .nav-link:focus {
+  color: var(--color-primary-base);
+  /* accent highlight */
+  border-bottom: 2px solid var(--color-primary-shade);
+}
+
+.nav-link.active {
+  color: var(--color-secondary-base);
+  /* secondary accent for active state */
+  border-bottom: 2px solid var(--color-secondary-shade);
+}
+
+/* Optional tertiary accent for special cases */
+.nav-link.special {
+  color: var(--color-tertiary-base);
+  border-bottom: 2px solid var(--color-tertiary-shade);
+}
+
+/* ------- NAV-BUTTONS ------- */
+.nav-btn-container {
+  display: flex;
+  gap: 2.0rem;
+  margin-left: 2rem;
+}
+
+
+/* --------------- DROPDOWN MENU --------------- */
+/* ABOUT: Dropdown Navigation */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-shade);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: var(--color-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  color: var(--color-neutral-shade);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--letter-spacing-tight);
+  text-transform: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--color-neutral-tint);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* --------------- SUBNAV --------------- */
+.subnav {
+  background-color: var(--color-neutral-tint);
+  border-top: 1px solid var(--color-primary-base);
+  border-bottom: 1px solid var(--color-neutral-base);
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.subnav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.subnav-links a {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-throughout);
+  color: var(--color-neutral-shade);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-transform: none;
+}
+
+.subnav-links a:hover {
+  color: var(--color-primary-base);
+}
+
+/* Logout button */
+
+#logoutBtn {
+  background: var(--color-tertiary-base);
+  color: var(--color-white);
+  border: none;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-button);
+  cursor: pointer;
+  font-size: var(--text-sm);
+  transition: background var(--transition-base);
+}
+
+#logoutBtn:hover {
+  background: var(--color-tertiary-shade);
+}
+
+/* Welcome card */
+
+.welcome-card {
+  border-left: 6px solid var(--color-primary-base);
+  background: var(--color-primary-tint);
+  max-width: 800px;
+  /* same as .container */
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* stack address + main row */
+  background-color: var(--color-primary-tint);
+  justify-content: center;
+}
+
+/* Account Section */
+.account-section {
+  border-left: 6px solid var(--color-primary-base);
+  background: var(--color-primary-tint);
+  max-width: 800px;
+  /* same as .container */
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* stack address + main row */
+  background-color: var(--color-primary-tint);
+  justify-content: center;
+}
+
+
+.welcome-card h3,
+.account-section h3 {
+  font-size: var(--text-h5);
+  color: var(--color-primary-shade);
+  margin-bottom: var(--space-xs);
+}
+
+.welcome-card p,
+.account-section li {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-xs);
+  color: var(--color-neutral-base);
+}
+
+.account-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.account-section strong {
+  color: var(--color-neutral-shade);
+}
+
+/* Utilities */
+
+.text-muted {
+  color: var(--color-neutral-base);
+}
+
+.loading {
+  opacity: 0.6;
+}
+
+
+#welcomeLastLogin,
+#accountLastLogin {
+  white-space: nowrap; /* Prevent line break */
+}
+
+
+/* ---------------------------------------------------------
+   7. LOADING SKELETONS
+--------------------------------------------------------- */
+
+.skeleton {
+  display: inline-block;
+  background: linear-gradient(90deg,
+      var(--color-neutral-tint) 0%,
+      #e9ecef 50%,
+      var(--color-neutral-tint) 100%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.2s infinite;
+  border-radius: 4px;
+  color: transparent;
+  /* hide text until loaded */
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
