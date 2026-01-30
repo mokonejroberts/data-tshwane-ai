@@ -12,13 +12,6 @@ if (empty($_SESSION['csrf_token'])) {
 $request = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 $request = str_replace('public-html', '', $request);
 
-// If root URL, show homepage content
-if ($request === '') {
-    echo "<h1>Welcome to Data Tshwane AI</h1>";
-    echo "<p>This is the homepage. Use the navigation to log in or register.</p>";
-    exit();
-}
-
 // Define allowed routes
 $routes = [
     'dashboard' => 'dashboard.php',
