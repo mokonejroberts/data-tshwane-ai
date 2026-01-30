@@ -14,6 +14,12 @@ if (empty($_SESSION['csrf_token'])) {
 $request = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 $request = str_replace('public-html', '', $request);
 
+// Handle homepage request
+if ($request === '') {
+    // Homepage — let index.php render the HTML below
+    return;
+}
+
 // Define allowed routes
 $routes = [
     'dashboard' => 'dashboard.php',
@@ -29,7 +35,8 @@ if (array_key_exists($request, $routes)) {
     require $routes[$request];
 } else {
     require '404.php';
-}
+
+};
 ?>
 
 <!DOCTYPE html>
