@@ -25,7 +25,7 @@ Phone portrait (XS): <576px */
 
     /* .nav-link {
         font-size: var(--text-paragraph); */
-        /* slightly smaller
+    /* slightly smaller
     } */
 
     .features-grid-container {
@@ -138,7 +138,7 @@ Phone portrait (XS): <576px */
         height: calc(80vh - var(--nav-height));
         min-height: auto;
         margin-bottom: 10rem;
-        
+
     }
 
     .cta-card {
@@ -154,7 +154,7 @@ Phone portrait (XS): <576px */
         column-gap: 0.5rem;
     }
 
-      .cta-section {
+    .cta-section {
         margin-bottom: 10rem;
     }
 
@@ -194,7 +194,7 @@ Phone portrait (XS): <576px */
         display: none;
     }
 
-    
+
     .logo-md {
         width: 120px;
         margin-right: 1rem;
@@ -214,13 +214,22 @@ Phone portrait (XS): <576px */
     }
 
     .nav-middle {
-        margin: 0.75rem 0;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-middle .nav-link {
+        font-size: 1.2rem; /* adjust for fit on small screens */
+        white-space: nowrap; /* forces the text to stay on one line */
+        padding: 0; /* optional: reduces vertical space */
     }
 
     .nav-btn-container {
         gap: 0.5rem;
     }
-   
+
     .subnav .container {
         width: 90%;
         gap: 1.5rem;
@@ -299,7 +308,7 @@ Phone portrait (XS): <576px */
 
     .features-section {
         margin-bottom: 5rem;
-    }   
+    }
 
     .cta-card {
         padding: 8rem 6rem;
@@ -326,7 +335,7 @@ Phone portrait (XS): <576px */
     .first-about-text-3,
     .first-about-text-4,
     .first-about-text-5 {
-        margin-bottom: 1.5rem;    
+        margin-bottom: 1.5rem;
     }
 
     .first-about-img {
@@ -402,5 +411,20 @@ Phone portrait (XS): <576px */
         padding: 2rem 1rem;
         margin-bottom: 5rem;
     }
-       
+
+    .nav-faith-pillar {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        font-size: 0.9rem;
+        /* slightly smaller to fit */
+        gap: 6px;
+        /* reduce spacing */
+    }
+
+    .nav-faith-pillar img {
+        width: 22px;
+        /* scale flags down a bit */
+    }
+
+
 }

@@ -135,10 +135,12 @@ body {
 }
 
 .page-wrapper {
-  max-width: 1200px;                  /* Leave in pixels */
+  max-width: 1200px;
+  /* Leave in pixels */
   width: 90%;
   margin: 0 auto;
-  padding-top: var(--nav-height);     /* Push page content down */
+  padding-top: var(--nav-height);
+  /* Push page content down */
 }
 
 h1,
@@ -207,7 +209,8 @@ span {
 /* Shared base for all buttons */
 .btn {
   display: inline-block;
-  padding: 1rem 2rem;              /* match Register’s proportions */
+  padding: 1rem 2rem;
+  /* match Register’s proportions */
   font-size: var(--text-base);
   font-weight: var(--font-weight-bold);
   line-height: 1.5;
@@ -333,20 +336,24 @@ span {
    - Fixed bottom-right circle for quick re-anchor
    - Scrolls to top (#top) or homepage
    - Includes arrow + "Home" text for clarity */
-   
+
 .home-container {
   height: 7rem;
   width: 7rem;
   background-color: var(--color-primary-tint);
   border-radius: 50%;
   display: flex;
-  flex-direction: column;   /* arrow above text */
+  flex-direction: column;
+  /* arrow above text */
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 50%;          /* place in the vertical middle */
-  right: 2rem;       /* keep it on the right side */
-  transform: translateY(-50%); /* offset by half its height */
+  top: 50%;
+  /* place in the vertical middle */
+  right: 2rem;
+  /* keep it on the right side */
+  transform: translateY(-50%);
+  /* offset by half its height */
   text-decoration: none;
   color: var(--color-primary-base);
   font-weight: var(--font-weight-bold);
@@ -400,7 +407,7 @@ span {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;  
+  z-index: 1000;
 }
 
 .nav-spacer {
@@ -409,32 +416,41 @@ span {
 
 /* Constrain navbar content like .container */
 .navbar {
-  max-width: 1200px; /* same as .container */
+  max-width: 1200px;
+  /* same as .container */
   width: 90%;
-  margin: 0 auto;    /* center horizontally */
+  margin: 0 auto;
+  /* center horizontally */
   display: flex;
-  flex-direction: column;   /* stack address + main row */
-  background-color: var(--color-primary-tint);  /* Primary Base */
+  flex-direction: column;
+  /* stack address + main row */
+  background-color: var(--color-primary-tint);
+  /* Primary Base */
 }
 
 .nav-faith-pillar {
   width: 100%;
   text-align: center;
-  font-size: 1rem; /* slightly larger for importance */
+  font-size: 1rem;
+  /* slightly larger for importance */
   font-weight: bold;
   color: var(--color-white);
   padding: 0.35rem 0;
   background: var(--color-primary-shade);
-  border-bottom: 1px solid rgba(255,255,255,0.15); /* subtle elegant line */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  /* subtle elegant line */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* spacing between flag and text */
+  gap: 8px;
+  /* spacing between flag and text */
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .nav-faith-pillar img {
   width: 26px;
-  height: auto; 
+  height: auto;
   vertical-align: middle;
 }
 
@@ -760,8 +776,10 @@ span {
   grid-template-columns: 1fr 1fr;
   row-gap: 15rem;
   column-gap: 5rem;
-  justify-items: center; /* horizontal centering */
-  align-items: center;   /* vertical centering */
+  justify-items: center;
+  /* horizontal centering */
+  align-items: center;
+  /* vertical centering */
 }
 
 /* Text blocks */
@@ -772,8 +790,9 @@ span {
 .first-about-text-5 {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* keeps spacing clean */
-  max-width: 42rem; 
+  gap: 1.5rem;
+  /* keeps spacing clean */
+  max-width: 42rem;
 }
 
 /* Headings inside cards */
@@ -792,19 +811,24 @@ span {
 
 /* Normalize list spacing inside About cards */
 .values-list {
-  margin-top: 1.5rem;   /* matches spacing between h3 → p */
-  margin-bottom: 0;     /* prevents extra bottom padding */
-  padding-left: 1.5rem; /* keeps bullets aligned but not too indented */
+  margin-top: 1.5rem;
+  /* matches spacing between h3 → p */
+  margin-bottom: 0;
+  /* prevents extra bottom padding */
+  padding-left: 1.5rem;
+  /* keeps bullets aligned but not too indented */
   line-height: var(--line-height-normal);
   font-size: var(--text-base);
 }
 
 .values-list li {
-  margin-bottom: 0.8rem; /* consistent internal spacing */
+  margin-bottom: 0.8rem;
+  /* consistent internal spacing */
 }
 
 .values-list li:last-child {
-  margin-bottom: 0; /* clean ending */
+  margin-bottom: 0;
+  /* clean ending */
 }
 
 /* Custom bullet marker */
@@ -817,11 +841,15 @@ span {
 }
 
 /* Ensure grid children can shrink and expand naturally */
-.first-about-grid-container > * {
-  min-width: 0;        /* allows grid tracks to shrink instead of collapsing */
-  max-width: 100%;     /* prevents intrinsic max-content expansion */
-  width: 100%;         /* ensures full-width behavior at narrow breakpoints */
-  display: block;      /* removes inline-level intrinsic sizing */
+.first-about-grid-container>* {
+  min-width: 0;
+  /* allows grid tracks to shrink instead of collapsing */
+  max-width: 100%;
+  /* prevents intrinsic max-content expansion */
+  width: 100%;
+  /* ensures full-width behavior at narrow breakpoints */
+  display: block;
+  /* removes inline-level intrinsic sizing */
 }
 
 
@@ -868,9 +896,11 @@ span {
   font-weight: var(--font-weight-bold);
   /* text-align: center; */
   width: 100%;
-  margin-bottom: 1.6rem; /* increased for breathing room */
+  margin-bottom: 1.6rem;
+  /* increased for breathing room */
   line-height: var(--line-height-tight);
-  min-height: 3rem; /* ensures p starts aligned across columns */
+  min-height: 3rem;
+  /* ensures p starts aligned across columns */
   letter-spacing: 0.3px;
   grid-column: 1 / -1;
 }
@@ -1113,7 +1143,8 @@ small {
 .form-group textarea {
   text-align: left;
   text-indent: 0;
-  padding-left: 1rem;   /* matches other inputs */
+  padding-left: 1rem;
+  /* matches other inputs */
   width: 100%;
   box-sizing: border-box;
 }
@@ -1136,7 +1167,8 @@ small {
   color: var(--color-white);
   font-size: var(--text-base);
   font-weight: var(--font-weight-bold);
-  padding: 1rem 2rem;   /* match Login’s padding */
+  padding: 1rem 2rem;
+  /* match Login’s padding */
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -1298,7 +1330,8 @@ small {
 
 /* Expanded case card spans full width */
 .case-card:has(.case-details[open]) {
-  grid-column: 1 / -1; /* stretch across all columns */
+  grid-column: 1 / -1;
+  /* stretch across all columns */
 }
 
 /* Optional: smooth transition when expanding */
@@ -1306,17 +1339,20 @@ small {
   transition: all 0.3s ease;
 }
 
-.case-details[open] > .case-toggle {
-  display: none; /* hide the summary when expanded */
+.case-details[open]>.case-toggle {
+  display: none;
+  /* hide the summary when expanded */
 }
 
 .case-studies-grid:has(.case-details[open]) {
-  grid-template-columns: 1fr; /* force one column when any details is open */
+  grid-template-columns: 1fr;
+  /* force one column when any details is open */
 }
 
 /* Extra breathing space when details are open */
 .case-details[open] .case-title {
-  margin-top: 2rem; /* adjust to match spacing below h2 */
+  margin-top: 2rem;
+  /* adjust to match spacing below h2 */
 }
 
 .case-details[data-expanded="true"] .case-hidden {
@@ -1363,8 +1399,10 @@ small {
   opacity: 0;
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
+
 .case-hidden.visible {
-  max-height: 500px; /* or auto with JS */
+  max-height: 500px;
+  /* or auto with JS */
   opacity: 1;
 }
 
@@ -1385,13 +1423,15 @@ small {
 .footer-links-container {
   display: flex;
   gap: 2.0rem;
-  justify-content: center;   /* center horizontally */
+  justify-content: center;
+  /* center horizontally */
   padding: 2rem 0;
   margin: 0;
 }
 
 .footer-links-container li a {
-  color: var(--color-neutral-base);   /* default text color */
+  color: var(--color-neutral-base);
+  /* default text color */
   text-decoration: none;
   font-size: var(--text-base);
   transition: color 0.3s ease, transform 0.3s ease;
@@ -1399,17 +1439,15 @@ small {
 
 /* Hover effects */
 .footer-links-container li a:hover {
-  color: var(--color-primary-base);   /* highlight color */
-  transform: translateY(-2px);        /* subtle lift */
-  text-decoration: underline;         /* optional underline */
+  color: var(--color-primary-base);
+  /* highlight color */
+  transform: translateY(-2px);
+  /* subtle lift */
+  text-decoration: underline;
+  /* optional underline */
 }
 
 .social-icon {
   width: 20px;
   /* Leave in pixels */
 }
-
-
-
-
-
