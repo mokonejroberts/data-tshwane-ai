@@ -1,8 +1,12 @@
 <?php
+// ✔  These lines execute immediately.
+// ✔ Errors should now appear in browser output unless the hosting provider suppresses them (common on shared hosting).
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+// ✔ A session is started (or resumed).
+// ✔ If session cookies cannot be set (rare), PHP may produce warnings.
 session_start();
 
 // Generate CSRF token if not set
@@ -24,20 +28,17 @@ $routes = [
     'admin-login-logs' => 'admin-login-logs.php'
 ];
 
-// Load requested page or show 404
-if (array_key_exists($request, $routes)) {
+
+// Homepage
+if ($request === '') {
+    // Allow index.php to render HTML below
+} else if (array_key_exists($request, $routes)) {
     require $routes[$request];
+    exit;
 } else {
     require '404.php';
-
-};
-
-// Handle homepage request
-if ($request === '') {
-    // Homepage — let index.php render the HTML below
-    // Do NOT return!
+    exit;
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -76,9 +77,13 @@ if ($request === '') {
             <div class="nav-wrapper">
                 <nav class="navbar">
                     <!-- Address row -->
-                    <div class="nav-address-bar">
-                        <span>📍 Pretoria, South Africa</span>
+
+                    <div class="nav-faith-pillar" style="text-align: center; font-weight: bold; padding: 6px 0;">
+                        <img src="/assets/images/64px-Flag_RSA.png" width="26" style="vertical-align: middle; margin-right: 8px;">
+                        I can do all things through Christ who strengthens me, gives me wisdom and helps my unbelief.
+                        <img src="/assets/images/64px-Flag_RSA.png" width="26" style="vertical-align: middle; margin-left: 8px;">
                     </div>
+
 
                     <!-- Flex row -->
                     <div class="nav-main">
