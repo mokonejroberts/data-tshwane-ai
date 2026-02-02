@@ -44,7 +44,7 @@ if (empty($_SESSION['csrf_token'])) {
                 <div class="nav-main">
 
                     <!-- Single logo anchor -->
-                    <a href="index.php">
+                    <a href="/">
                         <img class="logo-md" src="assets/images/DaTai-logo.svg" alt="DaTai logo">
                     </a>
 
@@ -65,7 +65,7 @@ if (empty($_SESSION['csrf_token'])) {
             <div class="subnav">
                 <div class="container">
                     <ul class="subnav-links">
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="/">Home</a></li>
         </header>
 
         <section id="login" class="login">

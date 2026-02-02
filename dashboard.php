@@ -56,7 +56,7 @@ $users = $usersStmt->fetchAll(PDO::FETCH_ASSOC);
                 <span>📍 Pretoria, South Africa</span>
             </div>
             <div class="nav-main">
-                <a href="index.php">
+                <a href="/">
                     <img class="logo-md" src="assets/images/DaTai-logo.png" alt="DaTai logo">
                 </a>
                 <div class="nav-middle">
@@ -72,8 +72,8 @@ $users = $usersStmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="subnav">
             <div class="container">
                 <ul class="subnav-links">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="index.php#contact">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#contact">Contact</a></li>
                     <li><a href="register.php">Register</a></li>
                 </ul>
             </div>

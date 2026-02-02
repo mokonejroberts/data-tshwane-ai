@@ -86,7 +86,7 @@ if ($request === '') {
 
                     <!-- Flex row -->
                     <div class="nav-main">
-                        <a href="index.php">
+                        <a href="/">
                             <img class="logo-md" src="assets/images/DaTai-logo.png" alt="DaTai logo">
                         </a>
                         <div class="nav-middle">
@@ -102,7 +102,7 @@ if ($request === '') {
                 <!-- Secondary navbar -->
                 <div class="subnav">
                     <ul class="subnav-links">
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li class="dropdown">
                             <a href="#about" class="dropdown-toggle">About</a>
                             <ul class="dropdown-menu">
@@ -650,7 +650,7 @@ if ($request === '') {
 
             <!-- FOOTER -->
             <footer class="footer">
-                <a href="index.php"><img class="logo-sm" src="assets/images/DaTai-logo.png" alt="DaTAI logo"></a>
+                <a href="/"><img class="logo-sm" src="assets/images/DaTai-logo.png" alt="DaTAI logo"></a>
                 <!-- Add in Quill logo and hyperlinks later -->
                 <!-- Add in social media icons later -->
                 <ul class="social-icons-container">
