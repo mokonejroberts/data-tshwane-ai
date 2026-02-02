@@ -76,14 +76,13 @@ if ($request === '') {
             <!-- Main navbar -->
             <div class="nav-wrapper">
                 <nav class="navbar">
-                    <!-- Address row -->
+                    <!-- Faith pillar row -->
 
-                    <div class="nav-faith-pillar" style="text-align: center; font-weight: bold; padding: 6px 0;">
-                        <img src="/assets/images/64px-Flag_RSA.png" width="26" style="vertical-align: middle; margin-right: 8px;">
+                    <div class="nav-faith-pillar">
+                        /assets/images/64px-Flag_RSA.png
                         I can do all things through Christ who strengthens me, gives me wisdom and helps my unbelief.
-                        <img src="/assets/images/64px-Flag_RSA.png" width="26" style="vertical-align: middle; margin-left: 8px;">
+                        /assets/images/64px-Flag_RSA.png
                     </div>
-
 
                     <!-- Flex row -->
                     <div class="nav-main">
