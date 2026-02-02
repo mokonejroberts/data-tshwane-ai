@@ -41,7 +41,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 
                     <!-- Flex row -->
                     <div class="nav-main">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img class="logo-md" src="assets/images/DaTai-logo.png" alt="DaTai logo">
                         </a>
                         <div class="nav-middle">
@@ -57,7 +57,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
                 <!-- Secondary navbar -->
                 <div class="subnav">
                     <ul class="subnav-links">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <!-- <li class="dropdown">
                             <a href="#about" class="dropdown-toggle">About</a>
                             <ul class="dropdown-menu">
