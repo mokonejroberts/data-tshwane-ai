@@ -80,7 +80,7 @@ if ($request === '') {
 
                     <div class="nav-faith-pillar">
                         <img src="/assets/images/64px-Flag_RSA.png" alt="South Africa flag">
-                        <span>I can do all things through Christ who strengthens me, gives me wisdom and helps my unbelief.</span>
+                        <span>https://data-tshwane-ai.co.za I can do all things through Christ who strengthens me, gives me wisdom and helps my unbelief. https://data-tshwane-ai.co.za</span>
                         <img src="/assets/images/64px-Flag_RSA.png" alt="South Africa flag">
                     </div>
 

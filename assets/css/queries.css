@@ -221,7 +221,7 @@ Phone portrait (XS): <576px */
     }
 
     .nav-middle .nav-link {
-        font-size: 1.2rem; /* adjust for fit on small screens */
+        font-size: 1.5rem; /* adjust for fit on small screens */
         white-space: nowrap; /* forces the text to stay on one line */
         padding: 0; /* optional: reduces vertical space */
     }
