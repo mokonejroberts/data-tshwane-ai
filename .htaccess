@@ -1,10 +1,14 @@
-
+DirectoryIndex index.php
 # ----------------------------------------
 # Force HTTPS (must be FIRST)
 # ----------------------------------------
 RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<Files "index.php">
+    Require all granted
+</Files>
 
 # ----------------------------------------
 # Front Controller (PHP Framework Routing)
@@ -16,13 +20,8 @@ RewriteRule ^ index.php [QSA,L]
 # ----------------------------------------
 # Security Headers
 # ----------------------------------------
-# Prevent MIME-type sniffing
 Header set X-Content-Type-Options "nosniff"
-
-# Prevent clickjacking
 Header set X-Frame-Options "DENY"
-
-# Enable basic XSS protection
 Header set X-XSS-Protection "1; mode=block"
 
 # ----------------------------------------
@@ -35,10 +34,8 @@ Header set X-XSS-Protection "1; mode=block"
 # ----------------------------------------
 # PHP Production Settings
 # ----------------------------------------
-# Disable error display in production
 php_flag display_errors Off
 php_flag log_errors On
 php_value error_log logs/php_error.log
-
 
 
