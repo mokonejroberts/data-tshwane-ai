@@ -430,35 +430,24 @@ span {
 
 /* ------- NAV-FAITH-PILLAR ------- */
 
+/* Prevent parent flex containers from affecting alignment */
 .nav-faith-pillar {
-  width: 100%;
-  display: inline-flex;          /* Keeps center alignment stable */
-  align-items: center;
-  justify-content: center;       /* Ensure full horizontal centering */
-  gap: 10px;                     /* Space between flags and text */
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;          /* Forces perfect centering */
+    width: 100%;
+    text-align: center !important;
 
-  padding: 0.35rem 0;
-  background: var(--color-primary-shade);
-  color: var(--color-white);
-  font-size: 1rem;
-  font-weight: bold;
-
-  white-space: nowrap;           /* Prevent unintended line breaks */
-  flex-wrap: nowrap;             /* Prevent flags jumping above text */
-  text-align: center;
+    white-space: nowrap !important;     /* Prevent flag stacking */
+    flex-wrap: nowrap !important;
 }
 
+/* Prevent images from jumping on top in mobile reflow */
 .nav-faith-pillar img {
-  width: 26px;                   /* Perfect visual balance with text */
-  height: auto;
-  flex-shrink: 0;                /* Stop images from collapsing */
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.nav-faith-pillar span {
-  display: inline-block;
-  line-height: 1.1;
+    flex-shrink: 0 !important;
+    align-self: center !important;
+    display: inline-block !important;
 }
 
 .nav-main {
