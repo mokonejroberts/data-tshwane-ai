@@ -47,7 +47,7 @@
     <div class="success-container">
         <h1>Registration Successful!</h1>
         <p>Welcome to <strong>Data Tshwane AI (DaTai)</strong></p>
-        <a href="index.php" class="btn">Home</a>
+        <a href="/" class="btn">Home</a>
         <a href="login.php" class="btn">Login</a>
     </div>
     <script src="assets/js/scripts.js" defer></script>
