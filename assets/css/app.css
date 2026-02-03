@@ -441,6 +441,7 @@ span {
 
     white-space: nowrap !important;     /* Prevent flag stacking */
     flex-wrap: nowrap !important;
+    border: 5px solid red !important;
 }
 
 /* Prevent images from jumping on top in mobile reflow */
