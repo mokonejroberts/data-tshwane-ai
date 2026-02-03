@@ -428,39 +428,45 @@ span {
   /* Primary Base */
 }
 
-.nav-faith-pillar {
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  /* slightly larger for importance */
-  font-weight: bold;
-  color: var(--color-white);
-  padding: 0.35rem 0;
-  background: var(--color-primary-shade);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  /* subtle elegant line */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  /* spacing between flag and text */
-  flex-wrap: nowrap;
-  white-space: nowrap;
-}
-
-.nav-faith-pillar img {
-  width: 26px;
-  height: auto;
-  vertical-align: middle;
-}
-
-
 .nav-main {
   height: var(--navbar-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+/* ------- NAV-FAITH-PILLAR ------- */
+
+.nav-faith-pillar {
+  width: 100%;
+  display: inline-flex;          /* Keeps center alignment stable */
+  align-items: center;
+  justify-content: center;       /* Ensure full horizontal centering */
+  gap: 10px;                     /* Space between flags and text */
+
+  padding: 0.35rem 0;
+  background: var(--color-primary-shade);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: bold;
+
+  white-space: nowrap;           /* Prevent unintended line breaks */
+  flex-wrap: nowrap;             /* Prevent flags jumping above text */
+  text-align: center;
+}
+
+.nav-faith-pillar img {
+  width: 26px;                   /* Perfect visual balance with text */
+  height: auto;
+  flex-shrink: 0;                /* Stop images from collapsing */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.nav-faith-pillar span {
+  display: inline-block;
+  line-height: 1.1;
 }
 
 /* ------- NAV-MIDDLE ------- */

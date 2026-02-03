@@ -213,6 +213,17 @@ Phone portrait (XS): <576px */
 
     }
 
+    .nav-faith-pillar {
+        font-size: 0.9rem;
+        gap: 6px;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+    }
+
+    .nav-faith-pillar img {
+        width: 20px;               /* Scales proportionally on phones */
+    }
+
     .nav-middle {
         white-space: nowrap;
         display: flex;
@@ -411,20 +422,4 @@ Phone portrait (XS): <576px */
         padding: 2rem 1rem;
         margin-bottom: 5rem;
     }
-
-    .nav-faith-pillar {
-        flex-wrap: nowrap;
-        white-space: nowrap;
-        font-size: 0.9rem;
-        /* slightly smaller to fit */
-        gap: 6px;
-        /* reduce spacing */
-    }
-
-    .nav-faith-pillar img {
-        width: 22px;
-        /* scale flags down a bit */
-    }
-
-
 }
