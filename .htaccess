@@ -1,4 +1,5 @@
 DirectoryIndex index.php
+
 # ----------------------------------------
 # Force HTTPS (must be FIRST)
 # ----------------------------------------
@@ -6,6 +7,19 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Fix Afrihost non-www /index.php access issue
+RewriteCond %{HTTP_HOST} ^data-tshwane-ai\.co\.za$ [NC]
+RewriteCond %{REQUEST_URI} ^/index\.php$ [NC]
+RewriteRule ^$ https://data-tshwane-ai.co.za/ [L,R=301]
+
+# ----------------------------------------
+# Fix Afrihost www/index.php alias issue
+# ----------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.data-tshwane-ai\.co\.za$ [NC]
+RewriteCond %{REQUEST_URI} ^/index\.php$ [NC]
+RewriteRule ^$ https://www.data-tshwane-ai.co.za/ [L,R=301]
+
+# Allow direct access to index.php (required on Afrihost)
 <Files "index.php">
     Require all granted
 </Files>
@@ -37,5 +51,4 @@ Header set X-XSS-Protection "1; mode=block"
 php_flag display_errors Off
 php_flag log_errors On
 php_value error_log logs/php_error.log
-
 
