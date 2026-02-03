@@ -434,6 +434,34 @@ if ($request === '') {
                         </article>
                     </div>
 
+                    <!-- ================= WEB ================= -->
+                    <div class="services-sector">
+                        <h3 class="services-heading">Web Insight</h3>
+
+                        <article class="services-card">
+                            <p class="services-sub">Business websites</p>
+                            <p>Professional, mobile‑responsive websites for individuals, small businesses, ministries, and NGOs, designed to
+                                communicate value clearly and build trust with visitors.</p>
+                        </article>
+
+                        <article class="services-card">
+                            <p class="services-sub">Web systems & dashboards</p>
+                            <p>Custom-built platforms powered by PHP, databases, and secure login functionality—ideal for managing data,
+                                tracking users, and building digital tools tailored to your processes.</p>
+                        </article>
+
+                        <article class="services-card">
+                            <p class="services-sub">Automation & integration</p>
+                            <p>Integrating your website with email, payments, APIs, and automated workflows to reduce manual work and bring
+                                your operations online.</p>
+                        </article>
+
+                        <article class="services-card">
+                            <p class="services-sub">Website maintenance</p>
+                            <p>Hosting support, security updates, backups, and website enhancements to keep your digital presence stable,
+                                protected, and up to date.</p>
+                        </article>
+                    </div>
                 </div>
             </section>
 
