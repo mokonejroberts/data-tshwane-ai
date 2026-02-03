@@ -208,11 +208,6 @@ Phone portrait (XS): <576px */
         line-height: tight;
     }
 
-    .nav-main {
-        height: auto;
-
-    }
-
     .nav-faith-pillar {
         font-size: 0.9rem;
         gap: 6px;
@@ -222,6 +217,11 @@ Phone portrait (XS): <576px */
 
     .nav-faith-pillar img {
         width: 20px;               /* Scales proportionally on phones */
+    }
+
+    .nav-main {
+        height: auto;
+
     }
 
     .nav-middle {

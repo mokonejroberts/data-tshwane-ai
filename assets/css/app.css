@@ -428,14 +428,6 @@ span {
   /* Primary Base */
 }
 
-.nav-main {
-  height: var(--navbar-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 /* ------- NAV-FAITH-PILLAR ------- */
 
 .nav-faith-pillar {
@@ -467,6 +459,14 @@ span {
 .nav-faith-pillar span {
   display: inline-block;
   line-height: 1.1;
+}
+
+.nav-main {
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /* ------- NAV-MIDDLE ------- */
