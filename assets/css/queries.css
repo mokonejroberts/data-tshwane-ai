@@ -225,7 +225,7 @@ Phone portrait (XS): <576px */
     }
 
     .nav-middle a {
-        letter-spacing: 0.5px;
+        letter-spacing: 1px;
         font-size: 0.95rem;
         white-space: nowrap;
     }
