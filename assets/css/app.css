@@ -438,7 +438,7 @@ span {
   align-items: center;
   margin: 0 auto;
   text-align: center;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   white-space: nowrap;        /* Prevents wrapping */
   flex-wrap: nowrap;          /* Prevents flags jumping above */
   
