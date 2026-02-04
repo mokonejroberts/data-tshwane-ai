@@ -58,7 +58,7 @@ if ($request === '') {
 
     <!-- Global CSS -->
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app.css?v=2">
     <link rel="stylesheet" href="assets/css/queries.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <link rel="stylesheet" href="assets/css/dashboard-queries.css">
