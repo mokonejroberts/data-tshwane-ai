@@ -438,14 +438,14 @@ span {
   align-items: center;
   margin: 0 auto;
   text-align: center;
-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
   white-space: nowrap;        /* Prevents wrapping */
   flex-wrap: nowrap;          /* Prevents flags jumping above */
   
   padding: 0.35rem 0;
   border: 2px solid transparent;   /* border removed or neutral */
   background-color: var(--color-primary-base);
-  color: var(--color-white);
+  color: var(--color-black);
   border: 2px solid var(--color-primary-base);
 }
 
@@ -455,7 +455,7 @@ font-weight: var(--font-weight-semibold);
   height: auto;
   vertical-align: middle;
   flex-shrink: 0;
-  margin: 0 1px; /* left and right breathing space */
+  margin: 0 1.5px; /* left and right breathing space */
 }
 
 .nav-main {
