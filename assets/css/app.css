@@ -443,7 +443,7 @@ span {
   flex-wrap: nowrap;          /* Prevents flags jumping above */
   padding: 0.35rem 0;
   border: 2px solid transparent;   /* border removed or neutral */
-  background-color: var(--color-tertiary-shade);
+  background-color: var(--color-primary-base);
   color: var(--color-white);
   border: 2px solid var(--color-primary-base);
 }
