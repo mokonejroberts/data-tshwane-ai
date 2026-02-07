@@ -473,8 +473,12 @@ span {
   /* occupy available space */
   text-align: center;
   /* center heading between logo and buttons */
-  letter-spacing: 1.5px;
+  letter-spacing: 2.0px;
 }
+
+/* .nav-middle h1{
+  letter-spacing: 1.5px;
+} */
 
 .nav-link {
   font-size: var(--text-h5);
