@@ -79,7 +79,7 @@ if ($request === '') {
                     <!-- Faith pillar row -->
 
                     <div class="nav-faith-pillar">
-                        <img src="/assets/images/64px-Flag_RSA.png" alt="South Africa flag">
+                        <img src="/assets/images/64px-Flag_RSA.png?v=4" alt="South Africa flag">
                         <span>I can do all things through Christ who strengthens me, gives me wisdom and helps my unbelief.</span>
                         <img src="/assets/images/64px-Flag_RSA.png" alt="South Africa flag">
                     </div>
