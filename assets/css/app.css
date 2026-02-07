@@ -454,7 +454,7 @@ span {
   height: auto;
   vertical-align: middle;
   flex-shrink: 0;
-  margin: 0 2px; /* left and right breathing space */
+  margin: 0 2.5px; /* left and right breathing space */
 }
 
 .nav-main {
@@ -479,7 +479,7 @@ span {
   /* heading baseline */
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
-  /* letter-spacing: var(--letter-spacing-tight); */
+  letter-spacing: 0.5px;
   font-family: var(--font-family-throughout);
   text-decoration: none;
   color: var(--color-neutral-shade);
