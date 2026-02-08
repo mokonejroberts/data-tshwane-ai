@@ -211,7 +211,7 @@ if ($request === '') {
                     <div id="about-origin" class="first-about-text-1">
                         <h3 class="first-about-heading">Why DataTshwane AI was founded</h3>
                         <p>
-                            The registered Data Tshwane AI company was founded to challenge brittle, black‑box
+                            Data Tshwane AI company was founded to challenge brittle, black‑box
                             data solutions. Its mission is to deliver modular, transparent, and stakeholder‑aligned
                             workflows
                             that build trust through reproducibility and principled refinement. A workfolw, as defined by IBM, is "a system for managing repetitive processes and tasks that occur in a particular order".
@@ -265,7 +265,7 @@ if ($request === '') {
                     <div id="about-mission" class="first-about-text-4">
                         <h3 class="first-about-heading">Our mission & vision</h3>
                         <p>
-                            Data Tshwane empowers decision‑makers with reproducible, transparent, and modular data science
+                            Data Tshwane AI empowers decision‑makers with reproducible, transparent, and modular data science
                             workflows.
                         </p>
                         <p>
