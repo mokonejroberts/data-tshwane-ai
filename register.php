@@ -80,7 +80,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 
         <section id="register" class="register">
             <div class="form-container">
-                <h2>Create your DaTai account</h2>
+                <h2>Create your Data Tshwane AI account</h2>
                 <form action="src/routes/register.php" method="POST" class="auth-form">
 
                     <!-- CSRF token for security hardening -->

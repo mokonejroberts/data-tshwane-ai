@@ -106,8 +106,8 @@ if ($request === '') {
                         <li class="dropdown">
                             <a href="#about" class="dropdown-toggle">About</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#about-origin">Why DaTai was founded</a></li>
-                                <li><a href="#about-founder">Meet the Founder</a></li>
+                                <li><a href="#about-origin">Why Data Tshwane AI was founded</a></li>
+                                <li><a href="#about-founder">Meet the founder</a></li>
                                 <li><a href="#about-evolution">From frustration to framework</a></li>
                                 <li><a href="#about-mission">Our mission & vision</a></li>
                                 <li><a href="#about-values-principles">Our values & principles</a></li>
@@ -201,7 +201,7 @@ if ($request === '') {
             <section class="first-about-section" id="about">
                 <h2 class="first-about-main-heading">
                     <span class="first-about-highlight first-about-highlight-tertiary">Behind</span>
-                    DaTai<br>
+                    Data Tshwane AI<br>
                     Modular clarity from mining to modelling.
                 </h2>
 
@@ -209,12 +209,12 @@ if ($request === '') {
 
                     <!-- About: Card 1: Text → Image -->
                     <div id="about-origin" class="first-about-text-1">
-                        <h3 class="first-about-heading">Why DaTai was founded</h3>
+                        <h3 class="first-about-heading">Why DataTshwane AI was founded</h3>
                         <p>
-                            DaTai — the registered Data Tshwane AI company — was founded to challenge brittle, black‑box
+                            The registered Data Tshwane AI company was founded to challenge brittle, black‑box
                             data solutions. Its mission is to deliver modular, transparent, and stakeholder‑aligned
                             workflows
-                            that build trust through reproducibility and principled refinement.
+                            that build trust through reproducibility and principled refinement. A workfolw, as defined by IBM, is "a system for managing repetitive processes and tasks that occur in a particular order".
                         </p>
                         <p>
                             Over time, these refinements have created space for deeper stakeholder engagement and more
@@ -232,14 +232,14 @@ if ($request === '') {
                     <div id="about-founder" class="first-about-text-2">
                         <h3 class="first-about-heading">Meet the founder</h3>
                         <p>
-                            Dr Mokone J. Roberts brings two decades of expertise across metallurgical operations,
+                            Dr Mokone J. Roberts brings to Data Tshwane AI, two and a half decades of expertise across metallurgical operations,
                             mineral economics, molecular modelling, and editorial leadership.
                         </p>
                         <p>
                             His multidisciplinary journey, coupled with an academic depth in computational chemistry
-                            and a career spanning North‑West University and the University of Cape Town, fuels DaTai’s
+                            and a career spanning North‑West University and the University of Cape Town, fuels Data Tshwane AI’s
                             resolution: to create data science workflows that are as transparent and reproducible as
-                            they are impactful. Mokone’s PhD-level precision anchors DaTai’s mission in operational
+                            they are impactful. Dr Roberts' PhD-level precision at an atomistic level anchors Data Tshwane AI’s mission in operational
                             grit, policy insight, and reproducible scientific clarity.
                         </p>
                     </div>
@@ -248,7 +248,7 @@ if ($request === '') {
                     <div id="about-evolution" class="first-about-text-3">
                         <h3 class="first-about-heading">From frustration to framework</h3>
                         <p>
-                            The DaTai company is growing into a principled architecture for modular,
+                            Data Tswane AI company is growing into a principled architecture for modular,
                             stakeholder‑facing data products. Each iteration — whether in stakeholder dialogue,
                             data preparation, anomaly detection, feature engineering, layout logic, or continuous
                             stakeholder messaging — has been a deliberate step toward operational clarity and trusted
@@ -265,7 +265,7 @@ if ($request === '') {
                     <div id="about-mission" class="first-about-text-4">
                         <h3 class="first-about-heading">Our mission & vision</h3>
                         <p>
-                            DaTai empowers decision‑makers with reproducible, transparent, and modular data science
+                            Data Tshwane empowers decision‑makers with reproducible, transparent, and modular data science
                             workflows.
                         </p>
                         <p>
@@ -278,7 +278,7 @@ if ($request === '') {
                     <div id="about-values-principles" class="first-about-text-5">
                         <h3 class="values-heading">Our values & principles</h3>
                         <p class="values-paragraph">
-                            DaTai is built on a foundation of reproducibility, transparency, and principled refinement.
+                            Data Tshwane AI company is built on a foundation of reproducibility, transparency, and principled refinement.
                             These values guide every workflow, ensuring that stakeholders can trust both the process
                             and the outcomes.
                         </p>
@@ -309,14 +309,14 @@ if ($request === '') {
             <!-- SERVICES SECTION -->
             <section class="services-section" id="services">
                 <h2 class="services-main-heading">
-                    What DaTai <span class="services-main-heading-tertiary">offers</span>
+                    What Data Tshwane AI <span class="services-main-heading-tertiary">offers</span>
                 </h2>
 
                 <div class="services-grid-container">
 
                     <!-- ================= BUSINESS ================= -->
                     <div class="services-sector">
-                        <h3 class="services-heading">Business Insight</h3>
+                        <h3 class="services-heading">Business insight</h3>
 
                         <article class="services-card">
                             <p class="services-sub">Strategic forecasting</p>
@@ -502,7 +502,7 @@ if ($request === '') {
             <section id="contact" class="contact">
                 <div class="form-container">
                     <h2>Contact us</h2>
-                    <p>Let’s explore how DaTai can support your data-driven journey.</p>
+                    <p>Let’s explore how Data Tshwane AI can support your data-driven journey.</p>
                     <form class="contact-form" action="src/routes/contact.php" method="POST">
 
                         <!-- CSRF token for security hardening -->
@@ -582,7 +582,7 @@ if ($request === '') {
                 <div class="case-studies-container">
                     <h2>Case studies</h2>
                     <p>
-                        Real-world <span class="case-highlight-projects">projects</span> showcasing DaTai’s impact.
+                        Real-world <span class="case-highlight-projects">projects</span> showcasing Data Tshwane AI's impact.
                     </p>
 
                     <!-- ========================= -->
