@@ -200,13 +200,7 @@ Phone portrait (XS): <576px */
         margin-right: 1rem;
     }
 
-    .nav-link {
-        /* font-size: var(--text-base); */
-        /* keep readable but minimal */
-        letter-spacing: 0;
-        /* reduce width impact */
-        line-height: tight;
-    }
+    
 
     .nav-faith-pillar {
         font-size: 0.9rem;
