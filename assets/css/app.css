@@ -521,6 +521,7 @@ span {
   display: flex;
   gap: 2.0rem;
   margin-left: 2rem;
+  margin-right: 0.2rem;
 }
 
 
