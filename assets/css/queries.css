@@ -199,14 +199,18 @@ Phone portrait (XS): <576px */
         width: 120px;
         margin-right: 1rem;
     }
-
-    
+ 
 
     .nav-faith-pillar {
         font-size: 0.9rem;
         gap: 6px;
         white-space: nowrap;
         flex-wrap: nowrap;
+    }
+
+    .nav-btn-container a {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.9rem;
     }
 
     .nav-faith-pillar img {
@@ -233,9 +237,10 @@ Phone portrait (XS): <576px */
         /* optional: reduces vertical space */
     }
 
-    .nav-btn-container {
-        gap: 0.5rem;
-    }
+    .nav-btn-container a {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+}
 
     .subnav .container {
         width: 90%;

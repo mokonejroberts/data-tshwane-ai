@@ -448,6 +448,17 @@ span {
   border: 2px solid var(--color-primary-base);
 }
 
+/* .nav-faith-pillar span {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    line-height: 1.2;
+    margin: 0 4px;
+    padding: 0;
+    white-space: nowrap;   /* matches container */
+} */
+
 /* Flag styling */
 .nav-faith-pillar img {
   width: 16px;
